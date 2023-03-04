@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	background: url(../img/kali.jpg) 50% 50% no-repeat ;
+    background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+.contenaire{
+	max-width: 500px;
+    display: grid;
+    width: 30%;
+    grid-template-columns: repeat(auto-fill, 15%);
+    position: relative;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+	grid-gap: 0.5rem;
+}
+
+.paragrapheINFO{
+	text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: math;
+    margin: 25px 0 0;
+    padding: 15px;
+    color: #ef8295;
+}
+.de_1,.de_2,.de_3,.de_4,.de_5,.de_6{
+background-color: #f2f2f2;
+    padding: 10px 16px;
+    margin: 5px;
+    display: none;
+    border-radius: 15%;
+    width: 50px;
+    text-align: center;
+    box-shadow: -3px 16px 8px 6px #16090994;
+	height: 37px;
+	cursor: pointer;
+}
+.de_1{
+background-color: #f2f2f2;
+    padding: 10px 16px;
+    margin: 5px;
+    display: block;
+    border-radius: 15%;
+    width: 50px;
+    text-align: center;
+    box-shadow: -3px 16px 8px 6px #16090994;
+	height: 37px;
+	cursor: pointer;
+}
+.rotationAnimation{
+/* animation-name: bounce-in-zoomin;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: 1;
+		animation-direction: normal;
+		animation-fill-mode: none; */
+
+	animation: rotate-center 1s linear 0s 1 normal none;
+	}
+
+	@keyframes rotate-center {
+			
+		0% {
+			transform:rotate(0);
+		}
+		100% {
+			transform:rotate(360deg);
+		}
+	}
+
+button.addDes{
+	grid-column: span 6;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 200px;
+    margin: 15px auto 5px;
+    background: #06cbf7;
+    color: aliceblue;
+}
+button:disabled{
+	background-color: #ccc;
+	cursor: none;
+	color: #666;
+	border: 1 solid #999;
+}
+.couverture{
+	background-color: rgb(0 0 0 / 80%);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: none;
+	cursor: pointer;
+	transition: ease-in;
+	transition-duration: 5s;
+}
+.box{
+	background-color: #ef8295;
+    padding: 7% 9%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+	border-radius: 10px;
+	transition-duration: 5s;
+}
+
+
+
+
+
+.buttonDisable{
+	display: none;
+}
+.buttonClic_cable{
+	display: block;
+}
+.activer{
+	display: block;
+}
+.desactiver{
+	display: none;
+}
